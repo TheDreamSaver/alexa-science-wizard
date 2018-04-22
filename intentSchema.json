@@ -1,0 +1,689 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "science wizard",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ChooseSubjects",
+                    "slots": [
+                        {
+                            "name": "subject",
+                            "type": "subjectList",
+                            "samples": [
+                                "{subject}",
+                                "study {subject}",
+                                "I want to learn {subject}",
+                                "I want to study {subject}",
+                                "choose {subject}",
+                                "I want to choose {subject}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "start learning",
+                        "start learning {subject}",
+                        "{subject}",
+                        "I want to study {subject}",
+                        "I want to learn {subject}",
+                        "learn {subject}",
+                        "study {subject}",
+                        "choose {subject}",
+                        "add new subject"
+                    ]
+                },
+                {
+                    "name": "ChooseExperiments",
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "samples": [
+                                "I want to do activity {number}",
+                                "conduct activity {number}",
+                                "I want to do activity number {number}",
+                                "conduct acitvity number {number}",
+                                "conduct acitvity {number}",
+                                "choose activity {number}",
+                                "choose activity number {number}",
+                                "choose experiment number {number}",
+                                "I want to choose {number}",
+                                "conduct experiment number {number}",
+                                "I want to do experiment number {number}",
+                                "conduct experiment {number}",
+                                "I want to do experiment {number}",
+                                "number {number}",
+                                "{number}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "I want to conduct activity {number}",
+                        "let's conduct activity {number}",
+                        "let's conduct activity number {number}",
+                        "activity {number}",
+                        "I want to do activity {number}",
+                        "I want to do experiment {number}",
+                        "{number}",
+                        "number {number}",
+                        "let's conduct experiment number {number}",
+                        "let's conduct number {number}",
+                        "let's conduct {number}",
+                        "conduct experiment",
+                        "I want to conduct experiment {number}"
+                    ]
+                },
+                {
+                    "name": "AMAZON.RepeatIntent",
+                    "samples": [
+                        "what was that again",
+                        "I didnt get that"
+                    ]
+                },
+                {
+                    "name": "AMAZON.YesIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NoIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NextIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PreviousIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StartOverIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.PauseIntent",
+                    "samples": []
+                },
+                {
+                    "name": "QuizIntent",
+                    "slots": [],
+                    "samples": [
+                        "start quiz",
+                        "open science quiz",
+                        "science quiz",
+                        "start science quiz",
+                        "ask science wizard for a science quiz"
+                    ]
+                },
+                {
+                    "name": "AnswerIntent",
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answerList"
+                        }
+                    ],
+                    "samples": [
+                        "The answer is {answer}",
+                        "{answer}"
+                    ]
+                },
+                {
+                    "name": "DebateIntent",
+                    "slots": [],
+                    "samples": [
+                        "ask science wizard to resume debate",
+                        "resume debate",
+                        "tell science wizard to give me a topic for debate",
+                        "ask science wizard for a debate topic",
+                        "topic of debate",
+                        "give me debate topic",
+                        "start science debate",
+                        "start debate",
+                        "start a debate",
+                        "give us a science debate topic",
+                        "tell me a debate topic",
+                        "give me a debate topic",
+                        "open a debate"
+                    ]
+                },
+                {
+                    "name": "WinnerIntent",
+                    "slots": [
+                        {
+                            "name": "winner",
+                            "type": "AMAZON.FirstName",
+                            "samples": [
+                                "{winner}",
+                                "the winner is {winner}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "{winner} wins",
+                        "it is {winner}",
+                        "{winner}",
+                        "the debate was won by {winner}",
+                        "{winner} won the debate",
+                        "the winner is {winner}"
+                    ]
+                },
+                {
+                    "name": "FormulaIntent",
+                    "slots": [
+                        {
+                            "name": "formula",
+                            "type": "formulaList",
+                            "samples": [
+                                "what is the formula of {formula}",
+                                "give me {formula} formula",
+                                "tell me the formula of {formula}",
+                                "{formula} formula",
+                                "formula of {formula}",
+                                "{formula}"
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "give me formula of {formula}",
+                        "tell me {formula} formula",
+                        "give me {formula} formula",
+                        "what is {formula} formula",
+                        "what is the formula of {formula}",
+                        "what is the formulae of {formula}",
+                        "{formula} formula",
+                        "formulae of {formula}",
+                        "{formula} formulae",
+                        "formula of {formula}",
+                        "give me the formulae of {formula}",
+                        "give me the formula of {formula}",
+                        "tell me the formulae of {formula}",
+                        "tell me the formula of {formula}"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "subjectList",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "psychology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "maths"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chemistry"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "biology"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "physics"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "answerList",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "conducted natural gas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "conduced natural gas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "converted natural gas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rutherford"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "bacquerel"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thomson"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "none of these"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "transverse"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "electromagnetic"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Xylometer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Seismograph"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Pyroscope"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "solids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "liquids"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gases"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "compressed natural gas"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vaccum",
+                                "synonyms": [
+                                    "vacumm",
+                                    "voccum",
+                                    "vacum",
+                                    "vacoom",
+                                    "vokum",
+                                    "vacum",
+                                    "vakum"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pyrometer"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "longitudinal"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "rontgen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "formulaList",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "inverse square law"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "electrical energy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "centripetal force"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "capacitance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "wavespeed"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "resistance"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ohms law"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "charge"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gas law"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "pressure"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "potential energy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kinetic energy"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "weight"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "power"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "momentum"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "work"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "force"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "density"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "acceleration"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "speed"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "dialog": {
+            "intents": [
+                {
+                    "name": "ChooseSubjects",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "subject",
+                            "type": "subjectList",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.691316225175.56398680440",
+                                "elicitation": "Elicit.Slot.691316225175.56398680440"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ChooseExperiments",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "number",
+                            "type": "AMAZON.NUMBER",
+                            "confirmationRequired": true,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "confirmation": "Confirm.Slot.1513089548022.757602177617",
+                                "elicitation": "Elicit.Slot.1513089548022.757602177617"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "QuizIntent",
+                    "confirmationRequired": true,
+                    "prompts": {
+                        "confirmation": "Confirm.Intent.562387509954"
+                    },
+                    "slots": []
+                },
+                {
+                    "name": "AnswerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "answer",
+                            "type": "answerList",
+                            "confirmationRequired": false,
+                            "elicitationRequired": false,
+                            "prompts": {}
+                        }
+                    ]
+                },
+                {
+                    "name": "WinnerIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "winner",
+                            "type": "AMAZON.FirstName",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.713753904557.1051735647234"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "FormulaIntent",
+                    "confirmationRequired": false,
+                    "prompts": {},
+                    "slots": [
+                        {
+                            "name": "formula",
+                            "type": "formulaList",
+                            "confirmationRequired": false,
+                            "elicitationRequired": true,
+                            "prompts": {
+                                "elicitation": "Elicit.Slot.472816754158.1274550354186"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "prompts": [
+            {
+                "id": "Elicit.Slot.686478084952.844188649403",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which subject do you want to choose?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.276892542619.722427756050",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which topic do you want to learn in {subject} ?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.276892542619.770235479998",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which subject do you want to choose?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.686478084952.844188649403",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You would like to learn {subject} . Is that correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.691316225175.56398680440",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which subject do you want to choose?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.691316225175.56398680440",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You would like to learn {subject} . Is that correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.197078700923.1119570085189",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which topic do you want to learn?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.197078700923.1119570085189",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You would like to learn {topic} . Is that correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.1513089548022.757602177617",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Which experiment number do you want to choose?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Slot.1513089548022.757602177617",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "You would like to conduct experiment number {number} . Is that correct?"
+                    }
+                ]
+            },
+            {
+                "id": "Confirm.Intent.562387509954",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Do you want to start a Science Quiz?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.801807407247.1036203628432",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "What's your answer?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.713753904557.1051735647234",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Who won the debate?"
+                    }
+                ]
+            },
+            {
+                "id": "Elicit.Slot.472816754158.1274550354186",
+                "variations": [
+                    {
+                        "type": "PlainText",
+                        "value": "Whose formula do you want to know about?"
+                    }
+                ]
+            }
+        ]
+    }
+}
