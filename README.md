@@ -2,7 +2,7 @@
 
 The main objective of our project is to power up science education in the classroom or home with the help of Alexa. With the help of Science Wizard, students, teachers and parents will be able to access hands on activities with all kinds of controls (start, stop and resume), science quizzes, debate prompts, thought experiments and scientific formula across Physics, Chemistry and Biology!
 
- If you are a teacher, you can use Science Wizard to help make your classes more interesting with the science activities and scientific debate prompts. If you are a student, you can get help with your homework and expand your critical thinking skills with the quizzes and activities. If you are a parent, you can heave a sigh of relief!  You don’t have to revisit Physics anymore, Alexa will help your child with their homework!
+If you are a teacher, you can use Science Wizard to help make your classes more interesting with the science activities and scientific debate prompts. If you are a student, you can get help with your homework and expand your critical thinking skills with the quizzes and activities. If you are a parent, you can heave a sigh of relief!  You don’t have to revisit Physics anymore, Alexa will help your child with their homework!
 
 In our country, India, many schools are understaffed and students find it difficult to get personalized attention. Our larger goal is to work towards ensuring students get all the help they need and science education is made more interesting and interactive with the help of virtual assistants like Alexa. 
 
@@ -27,3 +27,33 @@ Parents, you can now heave a sigh of relief! Alexa can now help your kids with t
 Work with students, teachers and parents to bring more engaging content to the skill.
 
 Build a personalized feedback system and recommendation system that keeps track of a student's progress. Provide personalized lessons based on student progress.
+
+
+## [For video demo](https://www.youtube.com/watch?v=BNUq5ewzk_4)
+
+### For experiments -
+
+Say, I want to study physics/chemistry/biology
+
+[Experiments Feature Workflow](https://www.youtube.com/watch?v=SIn7_Xw9EKg)
+
+
+### For debates - 
+
+Say, start a debate
+
+[Debates Feature Workflow](https://www.youtube.com/watch?v=DSRZQJ31fmM)
+
+
+### For quiz - 
+
+Say, start a quiz
+
+[Quiz Feature Workflow](https://www.youtube.com/watch?v=2UmZT4AtpUk)
+
+
+### For formulae - 
+
+Say, tell me the formula of speed
+
+[Formula Feature Workflow](https://www.youtube.com/watch?v=hifAWPAeGTU)
